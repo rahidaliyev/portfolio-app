@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar/Navbar';
 import './App.css';
 import Main from './components/Main/Main';
+import Proj from './components/Proj/Proj';
 
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
 <>
 <Navbar/>
 <Main/>
+<Proj/>
 
 </>
   );
