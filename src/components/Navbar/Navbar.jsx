@@ -11,7 +11,8 @@ export default function Navbar() {
   const [colorTheme,setTheme]=DarkMode();
   return (
     <div>
-   <HStack  width="100%" height={24} bg={'blue.700'} spacing={55}  >
+      <Box zIndex={'1px'}>
+   <HStack position={'fixed'} as={'nav'}  width="100%" height={24} bg={'blue.700'} spacing={55}  >
 
              
                 <Text  onClick={()=>setTheme(colorTheme)} ml={'30px'}>
@@ -36,7 +37,7 @@ export default function Navbar() {
                 </Box>
               
                 </HStack> 
-         
+                </Box>
     </div>
   )
 }

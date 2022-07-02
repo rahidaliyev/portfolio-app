@@ -17,7 +17,7 @@ export default function Main() {
         <Container> 
         <Center>
         <Flex>
-<Box mt={'110px'}>
+<Box mt={'206px'}>
 
   
         <Box ml={'50px'} mb={'-20px'} lineHeight={'28px'} theme={theme}   fontSize={'20px'} color={'#4338CA'}>Rahid Aliyev</Box>
@@ -37,7 +37,7 @@ export default function Main() {
                           <Box mt={'20px'}>I am currently open for full-time work.</Box>
                           </Box>
                         
-                          <Box ml={'80px'}  mt={'86px'} boxSize='sm'>
+                          <Box ml={'80px'}  mt={'206px'} boxSize='sm'>
   <Image borderRadius={'6px'} boxSize='450px'
     objectFit='cover' src={require("../../photos/RahidCover.JPG")} alt='Rahid Aliyev' />
 </Box>
