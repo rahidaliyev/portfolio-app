@@ -2,20 +2,18 @@ import React from 'react'
 import { Box,Heading,Text,Link} from '@chakra-ui/react'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 
-export default function Ability() {
+export default function Ability(props) {
     return (
         <div>
             <Box border={'1px black solid'} w={'311px'} h={'162px'}>
-                <Heading>
-                    Web design
+                <Heading fontSize={'18px'}>
+                    {props.name}
                 </Heading>
-                <Text>
-                    Provide our customers with optimized
-                     user-friendly experience to increase the
-                      efficiency of digital products.
+                <Text fontSize={'12px'}>
+                  {props.text}
                 </Text>
-                <Link href='https://chakra-ui.com' isExternal>
-  Chakra Design system <ExternalLinkIcon mx='2px' />
+                <Link  href='https://chakra-ui.com' isExternal>
+  See Works<ExternalLinkIcon mx='2px' />
 </Link>
             </Box>
 
