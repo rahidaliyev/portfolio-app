@@ -4,6 +4,7 @@ import './App.css';
 import Main from './components/Main/Main';
 import Proj from './components/Proj/Proj';
 import AllAbilities from './components/AllAbilities/AllAbilities';
+import Footer from './components/Footer/Footer';
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
 <Main/>
 <Proj/>
 <AllAbilities/>
-
+<Footer/>
 
 </>
   );

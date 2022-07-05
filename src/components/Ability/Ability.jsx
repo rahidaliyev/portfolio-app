@@ -5,7 +5,7 @@ import { ExternalLinkIcon } from '@chakra-ui/icons'
 export default function Ability(props) {
     return (
         <div>
-            <Box border={'1px black solid'} w={'311px'} h={'162px'}>
+            <Box w={'311px'} h={'162px'}>
                 <Heading fontSize={'18px'}>
                     {props.name}
                 </Heading>

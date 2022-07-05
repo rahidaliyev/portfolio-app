@@ -6,11 +6,11 @@ import Ability from '../Ability/Ability'
 export default function AllAbilities() {
   return (
     <div>
-  <Center>
+  <Center mt={'100px'}>
         <Flex >
             <Image src={require('../../photos/image 11.png')}></Image>
-        <Box h={'532px'} w={'690px'} mt={'100px'}>
-        <Flex wrap={'wrap'}>
+        <Box ml={'100px'} h={'532px'} w={'690px'} mt={'100px'}>
+        <Flex  wrap={'wrap'}>
         <Divider orientation='vertical' />
         <Ability 
          name='Web design'

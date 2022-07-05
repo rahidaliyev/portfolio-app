@@ -11,7 +11,7 @@ export default function Navbar() {
   const [colorTheme,setTheme]=DarkMode();
   return (
     <div>
-      <Box zIndex={'1px'}>
+      <Box>
    <HStack position={'fixed'} as={'nav'}  width="100%" height={24} bg={'blue.700'} spacing={55}  >
 
              

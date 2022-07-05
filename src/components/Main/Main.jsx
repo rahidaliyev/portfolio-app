@@ -30,10 +30,10 @@ export default function Main() {
                           Hi, I’m Rahid. I’m Front End Developer. If you are looking for Dev to build your websites and grow your business Let’s shake hands with me.
                           </Box>
                           <Flex>
-                            <Button colorScheme={'facebook'} size={'lg'} mr={'20px'}>Hire me</Button>
-                            <Button bg={'pink'} color={'pink.600'} size={'lg'}>Read more</Button>
+                            <Button position={'inherit'} zIndex={'-1px'} colorScheme={'facebook'} size={'lg'} mr={'20px'}>Hire me</Button>
+                            <Button position={'inherit'}  bg={'pink'} color={'pink.600'} size={'lg'}>Read more</Button>
                           </Flex>
-                          <Divider mt={'20px'}  w={'622px'} />
+                          <Divider position={'inherit'} mt={'20px'}  w={'622px'} />
                           <Box mt={'20px'}>I am currently open for full-time work.</Box>
                           </Box>
                         
