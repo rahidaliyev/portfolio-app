@@ -1,21 +1,23 @@
 import React from 'react'
-import Navbar from './components/Navbar/Navbar';
 import './App.css';
-import Main from './components/Main/Main';
-import Proj from './components/Proj/Proj';
-import AllAbilities from './components/AllAbilities/AllAbilities';
+import {Route,Routes} from 'react-router-dom'
+import DefaultPage from './components/DefaultPage';
+import HireMe from './components/HireMe/HireMe';
+import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
-
 
 function App() {
   return (
 <>
-<Navbar/>
-<Main/>
-<Proj/>
-<AllAbilities/>
-<Footer/>
+<Routes>
+<Route path='/' element={<DefaultPage/>} />
+<Route path='hire' element={
 
+<HireMe/>
+
+
+} />
+</Routes>
 </>
   );
 }
