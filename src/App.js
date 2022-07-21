@@ -3,8 +3,7 @@ import './App.css';
 import {Route,Routes} from 'react-router-dom'
 import DefaultPage from './components/DefaultPage';
 import HireMe from './components/HireMe/HireMe';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (

@@ -1,4 +1,3 @@
-import { HStack } from '@chakra-ui/react'
 import React from 'react'
 import AllAbilities from './AllAbilities/AllAbilities'
 import Footer from './Footer/Footer'

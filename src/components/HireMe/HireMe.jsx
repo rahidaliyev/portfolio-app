@@ -2,12 +2,13 @@ import { Box, FormControl, FormErrorMessage, FormHelperText, FormLabel, Input } 
 import React, { useState } from 'react'
 
 export default function HireMe() {
-    const [input, setInput] = useState('')
+    const [name, setName] = useState('')
+    const [mail,setMail]=useState('')
 
-    const handleInputChange = (e) => setInput(e.target.value)
-    const handleNameChange = (e) => setInput(e.target.value)
+    const handleInputChange = (e) => setMail(e.target.value)
+    const handleNameChange = (e) => setName(e.target.value)
   
-    const isError = input === ''
+    const isError = mail === ''
   return (
     <div>
         <Box m={'150px 0 0 36%'} p={'50px 0'} >
@@ -18,7 +19,7 @@ export default function HireMe() {
         w={'300px'}
         id='name'
         type='name'
-        value={input}
+        value={name}
         onChange={handleNameChange}
       />
       {!isError ? (
@@ -35,7 +36,7 @@ export default function HireMe() {
         w={'300px'}
         id='email'
         type='email'
-        value={input}
+        value={mail}
         onChange={handleInputChange}
       />
       {!isError ? (
