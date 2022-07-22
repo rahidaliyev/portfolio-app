@@ -1,4 +1,4 @@
-import { Box, FormControl, FormErrorMessage, FormHelperText, FormLabel, Input } from '@chakra-ui/react'
+import { Box, Button, FormControl, FormErrorMessage, FormHelperText, FormLabel, Input, Text, Textarea } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
 export default function HireMe() {
@@ -9,12 +9,22 @@ export default function HireMe() {
     const handleNameChange = (e) => setName(e.target.value)
   
     const isError = mail === ''
+//textarea
+    let [value, setValue] = React.useState('')
+
+    let handleTextChange = (e) => {
+      let inputValue = e.target.value
+      setValue(inputValue)
+    }
+
+
+
   return (
     <div>
-        <Box m={'150px 0 0 36%'} p={'50px 0'} >
+        <Box alignSelf={'center'} border={'1px'} borderColor={'blue.200'} borderRadius={'10px'} h={'500px'} w={'400px'} m={'150px 0 0 36%'} p={'50px 0'} >
     
-    <FormControl isInvalid={isError}>
-      <FormLabel  htmlFor='text'>Name</FormLabel>
+    <FormControl m={'30px 30px 0px 30px'} isInvalid={isError}>
+      <FormLabel  htmlFor='text'>Company Name</FormLabel>
       <Input
         w={'300px'}
         id='name'
@@ -30,7 +40,7 @@ export default function HireMe() {
         <FormErrorMessage>Name is required.</FormErrorMessage>
       )}
     </FormControl>
-    <FormControl isInvalid={isError}>
+    <FormControl m={'0px 30px 0px 30px'} isInvalid={isError}>
       <FormLabel  htmlFor='email'>Email</FormLabel>
       <Input
         w={'300px'}
@@ -47,6 +57,16 @@ export default function HireMe() {
         <FormErrorMessage>Email is required.</FormErrorMessage>
       )}
     </FormControl>
+    <Box  m={'30px 30px 0px 30px'} w={'300px'} mt={'10px'}>
+    <Text mb='8px'>Send me message</Text>
+      <Textarea  bg={'blue.50'}
+        value={value}
+        onChange={handleTextChange}
+        placeholder='Here is a sample placeholder'
+        size='sm'
+      />
+      </Box>
+      <Button m={'30px 30px 0px 30px'} size='sm' mr={10} bg='blue.400'>Hire me</Button>
     </Box>
     </div>
   )
