@@ -1,7 +1,8 @@
-import { Box, Button, FormControl, FormErrorMessage, FormHelperText, FormLabel, Input, Text, Textarea } from '@chakra-ui/react'
+import { Box, Button,FormControl, FormErrorMessage, FormHelperText, FormLabel, Image, Input, Text, Textarea } from '@chakra-ui/react'
 import React, { useState } from 'react'
 
 export default function HireMe() {
+  const photo='https://meet.jobs/static/media/index-4.0fce7b16.svg'
     const [name, setName] = useState('')
     const [mail,setMail]=useState('')
 
@@ -17,12 +18,23 @@ export default function HireMe() {
       setValue(inputValue)
     }
 
-
+    const style={
+      width: '100%',
+      height:'100%',
+      overFlow:'hidden',
+     
+      
+    }
+//image not in position
 
   return (
     <div>
-        <Box alignSelf={'center'} border={'1px'} borderColor={'blue.200'} borderRadius={'10px'} h={'500px'} w={'400px'} m={'150px 0 0 36%'} p={'50px 0'} >
-    
+    <Box  style={style} h={'100%'} display={'flex'} flexDirection={'row'}>
+      <Image height={'800px'} width={'800px'} src={photo}></Image>
+
+        <Box  border={'1px'} borderColor={'blue.200'} borderRadius={'10px'} h={'500px'} w={'400px'} m={'auto'}  p={'50px 0'} >
+       
+
     <FormControl m={'30px 30px 0px 30px'} isInvalid={isError}>
       <FormLabel  htmlFor='text'>Company Name</FormLabel>
       <Input
@@ -62,12 +74,13 @@ export default function HireMe() {
       <Textarea resize={'none'}  bg={'blue.50'}
         value={value}
         onChange={handleTextChange}
-        placeholder='Here is a sample placeholder'
+        placeholder="Write your company's expectation"
         size='sm'
       />
       </Box>
       <Button m={'30px 30px 0px 30px'} size='sm' mr={10} color={'white'} bg='blue.400'>Hire me</Button>
     </Box>
+    </Box> 
     </div>
   )
 }
