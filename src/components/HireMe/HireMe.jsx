@@ -59,14 +59,14 @@ export default function HireMe() {
     </FormControl>
     <Box  m={'30px 30px 0px 30px'} w={'300px'} mt={'10px'}>
     <Text mb='8px'>Send me message</Text>
-      <Textarea  bg={'blue.50'}
+      <Textarea resize={'none'}  bg={'blue.50'}
         value={value}
         onChange={handleTextChange}
         placeholder='Here is a sample placeholder'
         size='sm'
       />
       </Box>
-      <Button m={'30px 30px 0px 30px'} size='sm' mr={10} bg='blue.400'>Hire me</Button>
+      <Button m={'30px 30px 0px 30px'} size='sm' mr={10} color={'white'} bg='blue.400'>Hire me</Button>
     </Box>
     </div>
   )
