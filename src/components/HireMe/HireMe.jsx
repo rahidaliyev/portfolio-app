@@ -1,6 +1,12 @@
 import { Box, Button,FormControl, FormErrorMessage, FormHelperText, FormLabel, Image, Input, Text, Textarea } from '@chakra-ui/react'
 import React, { useState,useRef } from 'react'
+import {Link} from 'react-router-dom'
+import {MdOutlineArrowBack} from 'react-icons/md'
 import emailjs from '@emailjs/browser';
+
+function changeMouse(e) {
+  e.target.style.cursor = 'pointer';
+ }
 
 export default function HireMe() {
   const form = useRef();
@@ -43,6 +49,10 @@ export default function HireMe() {
 
   return (
     <div>
+    <Link to='/'>  <Box position={'absolute'} left={'10px'} top={'15px'} onMouseOver={changeMouse}>
+      <MdOutlineArrowBack size={50}/>
+      </Box>
+      </Link>
       <form ref={form}  onSubmit={sendEmail}>
     <Box  style={style} h={'100%'} display={'flex'} flexDirection={'row'}>
       <Image height={'800px'} width={'800px'} src={photo}></Image>
