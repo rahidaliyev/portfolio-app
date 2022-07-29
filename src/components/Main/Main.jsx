@@ -38,8 +38,8 @@ export default function Main() {
                           </Box>
                         
                           <Box ml={'80px'}  mt={'206px'} boxSize='sm'>
-  <Image borderRadius={'6px'} boxSize='450px'
-    objectFit='cover' src={require("../../photos/RahidCover.JPG")} alt='Rahid Aliyev' />
+  {/* <Image borderRadius={'6px'} boxSize='450px'
+    objectFit='cover' src={require("../../photos/RahidCover.JPG")} alt='Rahid Aliyev' /> */}
 </Box>
                           </Flex>
                           </Center>
