@@ -10,6 +10,8 @@ const theme = extendTheme({
     },
   })
 
+  const myPhoto='https://images.unsplash.com/photo-1583508915901-b5f84c1dcde1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'
+
 
 export default function Main() {
   return (
@@ -40,6 +42,8 @@ export default function Main() {
                           <Box ml={'80px'}  mt={'206px'} boxSize='sm'>
   {/* <Image borderRadius={'6px'} boxSize='450px'
     objectFit='cover' src={require("../../photos/RahidCover.JPG")} alt='Rahid Aliyev' /> */}
+    <Image borderRadius={'6px'} boxSize='450px'
+    objectFit='cover' src={myPhoto} alt='Rahid Aliyev'/>
 </Box>
                           </Flex>
                           </Center>
