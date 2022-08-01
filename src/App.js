@@ -4,7 +4,6 @@ import {Route,Routes} from 'react-router-dom'
 import DefaultPage from './components/DefaultPage';
 import HireMe from './components/HireMe/HireMe';
 import RingLoader from "react-spinners/RingLoader";
-import { Box } from '@chakra-ui/react';
 
 
 function App() {
@@ -33,7 +32,6 @@ size={150}
 loading={loading}
 style={style}
 />
-{/* <Box style={style}>Lütfən gözləyin....</Box> */}
 </div>
 :
 <div>

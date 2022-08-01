@@ -41,10 +41,8 @@ export default function HireMe() {
     const style={
       width: '100%',
       height:'100%',
-      overFlow:'hidden',
-     
-      
-    }
+      overFlow:'hidden'
+     }
 //image not in position
 
   return (
