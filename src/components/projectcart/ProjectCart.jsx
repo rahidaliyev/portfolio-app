@@ -9,7 +9,7 @@ export default function ProjectCart(props) {
     13 days ago
   </Box>
   <Heading size='md' my='2'>
-    <LinkOverlay href='https://client-tau-ecru.vercel.app/'>
+    <LinkOverlay href='https://client-tau-ecru.vercel.app/' target="_blank">
     {props.name}
     </LinkOverlay>
   </Heading>
