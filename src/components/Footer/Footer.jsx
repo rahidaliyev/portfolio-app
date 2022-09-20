@@ -18,7 +18,7 @@ export default function Footer() {
   return (
     <div>
 
-      <Box theme={theme} pt={'30px'} mt={'150px'} bg={'#FEF2F2'} h={'380px'} w={'100%'} >
+      <Box  theme={theme} pt={'30px'} mt={'150px'} bg={'#FEF2F2'} h={'380px'} w={'100%'} >
 
 
         <Text textAlign={'center'} fontSize='5xl'>Contact with me</Text>
